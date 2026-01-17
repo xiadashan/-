@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <defs>
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f5ff" />
+      <stop offset="100%" style="stop-color:#a855f7" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Connection lines -->
+  <g stroke="url(#lineGradient)" stroke-width="1.5" fill="none" filter="url(#glow)">
+    <!-- Core connections forming abstract "S" shape -->
+    <line x1="15" y1="15" x2="30" y2="12"/>
+    <line x1="30" y1="12" x2="45" y2="18"/>
+    <line x1="15" y1="15" x2="20" y2="30"/>
+    <line x1="30" y1="12" x2="30" y2="30"/>
+    <line x1="45" y1="18" x2="40" y2="30"/>
+    <line x1="20" y1="30" x2="30" y2="30"/>
+    <line x1="30" y1="30" x2="40" y2="30"/>
+    <line x1="20" y1="30" x2="15" y2="45"/>
+    <line x1="30" y1="30" x2="30" y2="48"/>
+    <line x1="40" y1="30" x2="45" y2="42"/>
+    <line x1="15" y1="45" x2="30" y2="48"/>
+    <line x1="30" y1="48" x2="45" y2="42"/>
+  </g>
+
+  <!-- Nodes -->
+  <g fill="url(#nodeGradient)" filter="url(#glow)">
+    <!-- Top row -->
+    <circle cx="15" cy="15" r="4"/>
+    <circle cx="30" cy="12" r="5"/>
+    <circle cx="45" cy="18" r="4"/>
+    <!-- Middle row -->
+    <circle cx="20" cy="30" r="3.5"/>
+    <circle cx="30" cy="30" r="6"/>
+    <circle cx="40" cy="30" r="3.5"/>
+    <!-- Bottom row -->
+    <circle cx="15" cy="45" r="4"/>
+    <circle cx="30" cy="48" r="5"/>
+    <circle cx="45" cy="42" r="4"/>
+  </g>
+</svg>

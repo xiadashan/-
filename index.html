@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- 区块链网格背景 -->
+    <div class="blockchain-bg">
+        <canvas id="networkCanvas"></canvas>
+    </div>
+
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <span class="logo-icon">◈</span>
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="拾末科技" class="logo-svg">
                 <span class="logo-text">拾末科技</span>
-            </div>
+            </a>
             <ul class="nav-links">
                 <li><a href="#vision">愿景</a></li>
                 <li><a href="#culture">文化</a></li>
@@ -27,33 +32,38 @@
     <section class="hero" id="vision">
         <div class="hero-bg"></div>
         <div class="hero-content">
+            <div class="hero-logo">
+                <img src="images/logo.svg" alt="拾末科技" class="hero-logo-svg">
+            </div>
             <h1 class="hero-title">
                 <span class="title-line">长期构建</span>
                 <span class="title-highlight">数字资产复利系统</span>
             </h1>
             <p class="hero-subtitle">以确定性对抗不确定性，让复利在时间中沉淀价值</p>
-            <div class="hero-decorations">
-                <div class="grid-lines"></div>
-            </div>
         </div>
     </section>
 
     <!-- 团队文化 -->
     <section class="culture" id="culture">
         <div class="container">
-            <h2 class="section-title">团队文化</h2>
+            <h2 class="section-title">
+                <span class="title-icon"></span>
+                团队文化
+            </h2>
             <div class="culture-grid">
                 <div class="culture-card">
+                    <div class="card-node"></div>
                     <div class="card-icon">本</div>
                     <h3>本分</h3>
                     <p>做对的事情，把事情做对</p>
-                    <div class="card-glow"></div>
+                    <div class="card-connector"></div>
                 </div>
                 <div class="culture-card">
+                    <div class="card-node"></div>
                     <div class="card-icon">和</div>
                     <h3>和谐</h3>
                     <p>相信二八定律，锻造自己不平凡</p>
-                    <div class="card-glow"></div>
+                    <div class="card-connector"></div>
                 </div>
             </div>
         </div>
@@ -62,9 +72,13 @@
     <!-- 业务引擎 -->
     <section class="engines" id="engines">
         <div class="container">
-            <h2 class="section-title">双引擎驱动</h2>
+            <h2 class="section-title">
+                <span class="title-icon"></span>
+                双引擎驱动
+            </h2>
             <div class="engines-grid">
                 <div class="engine-card engine-a">
+                    <div class="engine-node"></div>
                     <div class="engine-header">
                         <span class="engine-tag">ENGINE A</span>
                         <h3>套利搬砖</h3>
@@ -87,6 +101,7 @@
                     </div>
                 </div>
                 <div class="engine-card engine-b">
+                    <div class="engine-node"></div>
                     <div class="engine-header">
                         <span class="engine-tag">ENGINE B</span>
                         <h3>Web3 投研与执行</h3>
@@ -115,9 +130,13 @@
     <!-- 复利原则 -->
     <section class="principles" id="principles">
         <div class="container">
-            <h2 class="section-title">复利原则</h2>
+            <h2 class="section-title">
+                <span class="title-icon"></span>
+                复利原则
+            </h2>
             <div class="principles-grid">
                 <div class="principle-card">
+                    <div class="principle-node"></div>
                     <div class="principle-number">01</div>
                     <h3>资产复利</h3>
                     <ul class="principle-list">
@@ -127,6 +146,7 @@
                     </ul>
                 </div>
                 <div class="principle-card">
+                    <div class="principle-node"></div>
                     <div class="principle-number">02</div>
                     <h3>系统复利</h3>
                     <ul class="principle-list">
@@ -137,6 +157,7 @@
                     </ul>
                 </div>
                 <div class="principle-card">
+                    <div class="principle-node"></div>
                     <div class="principle-number">03</div>
                     <h3>个人复利</h3>
                     <ul class="principle-list">
@@ -156,7 +177,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <span class="logo-icon">◈</span>
+                    <img src="images/logo.svg" alt="拾末科技" class="footer-logo-svg">
                     <span>拾末科技</span>
                 </div>
                 <p class="footer-tagline">复利，是时间的礼物</p>
